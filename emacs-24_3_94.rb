@@ -1,6 +1,6 @@
 require 'formula'
 
-class Emacs24_3_94 < Formula
+class Emacs24394 < Formula
   homepage 'http://www.gnu.org/software/emacs/'
   url 'ftp://alpha.gnu.org/gnu/emacs/pretest/emacs-24.3.94.tar.xz'
   #sha256 '0098ca3204813d69cd8412045ba33e8701fa2062f4bff56bedafc064979eef41'
