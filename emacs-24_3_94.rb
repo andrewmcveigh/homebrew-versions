@@ -3,7 +3,7 @@ require 'formula'
 class Emacs24394 < Formula
   homepage 'http://www.gnu.org/software/emacs/'
   url 'ftp://alpha.gnu.org/gnu/emacs/pretest/emacs-24.3.94.tar.xz'
-  #sha256 '0098ca3204813d69cd8412045ba33e8701fa2062f4bff56bedafc064979eef41'
+  sha1 '9263f1205899a60df05c3e50baf00d54d76d9b1d'
 
   option "cocoa", "Build a Cocoa version of emacs"
   option "srgb", "Enable sRGB colors in the Cocoa version of emacs"
@@ -41,10 +41,10 @@ class Emacs24394 < Formula
 #     end
 
     # Fix memory leaks in NS version from upstream r114945
-    patch do
-      url "https://gist.githubusercontent.com/anonymous/8553178/raw/c0ddb67b6e92da35a815d3465c633e036df1a105/emacs.memory.leak.aka.distnoted.patch.diff"
-      sha1 "173ce253e0d8920e0aa7b1464d5635f6902c98e7"
-    end
+    # patch do
+    #   url "https://gist.githubusercontent.com/anonymous/8553178/raw/c0ddb67b6e92da35a815d3465c633e036df1a105/emacs.memory.leak.aka.distnoted.patch.diff"
+    #   sha1 "173ce253e0d8920e0aa7b1464d5635f6902c98e7"
+    # end
 
     # "--japanese" option:
     # to apply a patch from MacEmacsJP for Japanese input methods
